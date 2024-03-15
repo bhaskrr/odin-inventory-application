@@ -15,7 +15,7 @@ const mongoose = require('mongoose');
 const compression = require('compression');
 mongoose.set('strictQuery', false);
 const dev_db_url = "mongodb+srv://bhaskarbordoloi:OzpLy2lvJEw3LR71@cluster0.llcewnk.mongodb.net/inventory_data?retryWrites=true&w=majority&appName=Cluster0"
-const mongoDB =  process.env.MONGO_URI || dev_db_url;
+const mongoDB =  dev_db_url;
 
 main().catch((err) => console.log(err));
 async function main() {
