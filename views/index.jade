@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  section(class="available-categories ")
+    ul(class="index-list list-unstyled p-2")
+      each item in categoryAndItemCount
+        li.fs-3 
+          a(href= item.url)
+            p #{item.name} - #{item.itemCount}

@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.categories{
+  width: fit-content;
+  height: 100vh;
+
+}
+
+.categories ul li:hover{
+  color: rgb(167, 161, 161);
+}
+
+.index-list{
+  width: fit-content;
+}

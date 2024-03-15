@@ -1,0 +1,7 @@
+extends layout 
+
+block content
+    ul.fs-3 
+        each item in items 
+            li
+                a(href=item.url) #{item.name} - #{item.price}$

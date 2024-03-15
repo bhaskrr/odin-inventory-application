@@ -1,0 +1,8 @@
+extends layout 
+
+block content 
+    p.fs-3 This is the all items page
+    ul
+        each item in allItems 
+            li.fs-4
+                a(href= item.url) #{item.name}

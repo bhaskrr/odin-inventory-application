@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel="stylesheet", href="/css/bootstrap.min.css")
+  body(class="bg-light")
+    section(class='app-container')
+      header(class='header d-flex justify-content-between align-items-center bg-light p-2 ')
+        a(class="nav-link" href='/')
+          h1(class="text-primary fw-bold") StockHawk
+        nav(class='nav fs-2')
+          a(class='nav-link text-black' href='/') Home
+          a(class='nav-link text-black' href='/items') All items
+          a(class='nav-link text-black' href='/categories') Categories
+      block content
