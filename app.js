@@ -12,7 +12,8 @@ const categoriesRouter = require('./routes/categories');
 var app = express();
 const mongoose = require('mongoose');
 mongoose.set('strictQuery', false);
-const mongoDB = "mongodb+srv://bhaskarbordoloi:OzpLy2lvJEw3LR71@cluster0.llcewnk.mongodb.net/inventory_data?retryWrites=true&w=majority&appName=Cluster0"
+const dev_db_url = "mongodb+srv://bhaskarbordoloi:OzpLy2lvJEw3LR71@cluster0.llcewnk.mongodb.net/inventory_data?retryWrites=true&w=majority&appName=Cluster0"
+const mongoDB =  process.env.MONGO_URI || dev_db_url;
 
 main().catch((err) => console.log(err));
 async function main() {
